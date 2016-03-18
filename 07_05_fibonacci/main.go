@@ -8,7 +8,7 @@ func main() {
 
 func fibonacci(x int) int {
 	var ret int
-	if x<=1 {
+	if x <= 1 {
 		ret = x
 	} else {
 		ret = fibonacci(x-1) + fibonacci(x-2)

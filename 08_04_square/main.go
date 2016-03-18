@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	x:=1.5
+	x := 1.5
 	square(&x)
 	fmt.Println(x)
 }

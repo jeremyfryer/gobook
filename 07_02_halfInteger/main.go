@@ -8,5 +8,5 @@ func main() {
 }
 
 func half(x int) (int, bool) {
-	return x/2, x%2==0
+	return x / 2, x%2 == 0
 }

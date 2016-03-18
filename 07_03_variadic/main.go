@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(greatest(10,30,50,40,20))
+	fmt.Println(greatest(10, 30, 50, 40, 20))
 }
 
 func greatest(x ...int) int {
