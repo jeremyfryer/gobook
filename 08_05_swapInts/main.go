@@ -10,8 +10,5 @@ func main() {
 }
 
 func swap(x *int, y *int) {
-	var z int
-	z = *x
-	*x = *y
-	*y = z
+	*x, *y = *y, *x
 }
