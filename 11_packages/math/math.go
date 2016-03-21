@@ -1,6 +1,6 @@
 package math
 
-// Finds the average of a series of numbers
+//Average finds the average of a series of numbers
 func Average(xs []float64) float64 {
 	if len(xs) > 0 {
 		total := float64(0)
@@ -8,15 +8,13 @@ func Average(xs []float64) float64 {
 			total += x
 		}
 		return total / float64(len(xs))
-	} else {
-		return 0
 	}
+	return 0
+
 }
 
-/*
-[]float64 -> float64
-Finds the minimum of a slice of float64s
- */
+//Min finds the minimum of a slice of float64s
+//[]float64 -> float64
 func Min(xs []float64) float64 {
 	min := xs[0]
 	for _, value := range xs {
@@ -27,11 +25,8 @@ func Min(xs []float64) float64 {
 	return min
 }
 
-
-/*
-[]float64 -> float64
-Finds the maximum of a slice of float64s
- */
+//Max finds the maximum of a slice of float64s
+//[]float64 -> float64
 func Max(xs []float64) float64 {
 	max := xs[0]
 	for _, value := range xs {
