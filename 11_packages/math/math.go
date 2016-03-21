@@ -2,11 +2,15 @@ package math
 
 // Finds the average of a series of numbers
 func Average(xs []float64) float64 {
-	total := float64(0)
-	for _, x := range xs {
-		total += x
+	if len(xs) > 0 {
+		total := float64(0)
+		for _, x := range xs {
+			total += x
+		}
+		return total / float64(len(xs))
+	} else {
+		return 0
 	}
-	return total / float64(len(xs))
 }
 
 /*
